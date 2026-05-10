@@ -1,0 +1,20 @@
+const express = require('express'); const app = express(); // Serve Static Files app.use(express.static('public')); 
+// Server Port const PORT = 3000; app.listen(PORT, () => {     console.log(`Server running at http://localhost:${PORT}`); 
+}); 
+***Index***** 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Static Website</title> 
+   <style>         body{             font-family: Arial;             text-align: center;             margin-top: 100px;             background-color: #f2f2f2; 
+        } 
+ h1{             color: blue; 
+        } 
+    </style> 
+</head> 
+<body> 
+<h1>Welcome to Node.js Static Website</h1> 
+<p>This website is served using Node.js and Express.</p> 
+ 
+</body> 
+</html> 
